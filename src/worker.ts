@@ -6,6 +6,15 @@ import webpush from "web-push";
 import { queryDatabase } from './utils';
 
 
+const publicVapidKey = "BJt_JxiWtVlCFua0S8MTB5rPziBqNx1qIo";
+const privateVapidKey = "3KzvKasA2SoCxsp0iI3JRKNIWBM";
+
+webpush.setVapidDetails(
+    "name@something.com",
+    publicVapidKey,
+    privateVapidKey
+);
+
 amqp.connect('amqp://localhost:5672', function (error0: any, connection: Connection) {
     if (error0) {
         throw error0;
