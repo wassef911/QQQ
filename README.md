@@ -1,5 +1,6 @@
-if you don't know what this repo is, then it's none of your business
+# no clues about queues.
 
-have a nice day.
+a 30 minutes demo for a web push notifications system (PWAs) using rabbitMQ and multiple databases:
 
-### if you do then:
+- **A:** containnig agency/user data.
+- **B:** containnig subscriptions and real-time business logic.
